@@ -1,0 +1,20 @@
+server:
+  port: 6364
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: uat.kian.digital:9092
+          zkNodes: uat.kian.digital:2181
+        bindings:
+          consumer.autoCommitOffset: true
+          notification-v4:
+            consumer.autoCommitOffset: true
+#            consumer.auto-offset-reset: earliest
+
+#      bindings:
+#        notificationV4:
+#          destination: notificationV4
+#          contentType: application/json
