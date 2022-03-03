@@ -9,12 +9,14 @@ spring:
           brokers: uat.kian.digital:9092
           zkNodes: uat.kian.digital:2181
         bindings:
-          consumer.autoCommitOffset: true
-          notification-v4:
-            consumer.autoCommitOffset: true
-#            consumer.auto-offset-reset: earliest
-
-#      bindings:
-#        notificationV4:
-#          destination: notificationV4
-#          contentType: application/json
+          notificationV4:
+            consumer.autoCommitOffset: false
+          notification:
+            consumer.autoCommitOffset: false
+      bindings:
+        notificationV4:
+          destination: notificationV4
+          contentType: application/json
+        notification:
+          destination: notification
+          contentType: application/json

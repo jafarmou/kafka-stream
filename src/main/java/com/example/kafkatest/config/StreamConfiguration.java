@@ -1,10 +1,10 @@
 package com.example.kafkatest.config;
 
-import com.example.kafkatest.stream.OutputStreams;
+import com.example.kafkatest.stream.producer.OutputStreams;
+import com.example.kafkatest.stream.listener.InputStreams;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@EnableBinding(value = {OutputStreams.class})
+//@Configuration
+@EnableBinding(value = {OutputStreams.class, InputStreams.class})
 public class StreamConfiguration {
 }

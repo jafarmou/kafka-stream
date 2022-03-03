@@ -1,6 +1,6 @@
 package com.example.kafkatest.util;
 
-import com.example.kafkatest.stream.OutputStreams;
+import com.example.kafkatest.stream.producer.OutputStreams;
 import com.kian.notification.dto.v4.NotificationRequestV4Dto;
 import com.kian.notification.dto.v4.NotificationResponseV4Dto;
 import com.kian.notification.enumeration.NotificationChannel;
